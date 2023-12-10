@@ -1,0 +1,11 @@
+.hero__image {
+    width: 100% !important;
+    height: auto !important;
+    -webkit-animation: mover 2s infinite  alternate !important;
+    animation: mover 2s infinite  alternate !important;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
