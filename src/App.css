@@ -1,4 +1,13 @@
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: local('SourceSansPro-Regular') url(./Fonts/SourceSansPro-Regular.otf) format('opentype');
+}
 
-* {
-  font-family: 'source sans 3';
+@font-face {
+  font-family: 'SourceSansPro-SemiboldIt';
+  src: local('SourceSansPro-SemiboldIt') url(./Fonts/SourceSansPro-SemiboldIt.otf.woff) format('opentype');
+}
+
+.App {
+  font-family: 'SourceSansPro-Regular', Arial, sans-serif;
 }

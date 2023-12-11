@@ -1,19 +1,19 @@
-import BrandLogos from "./Components/BrandLogos/BrandLogos";
-import Header from "./Components/Header/Header";
-import Secondary from "./Components/Secondary/Secondary";
-import TryOut from "./Components/TryOut/TryOut";
-import Uses from "./Components/Uses/Uses";
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainPage from './Pages/MainPage/MainPage';
+import Support from './Components/Support/Support';
 
 
 
 const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Secondary />
-      <BrandLogos />
-      <Uses />
-      <TryOut />
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />}/>
+          <Route path="/support" element={<Support />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

@@ -6,7 +6,7 @@ const Uses = () => {
       <Container className="d-flex flex-column justify-content-center align-items-center">
         <Row>
           <Col>
-            <h2 style={{ color: "#042a2b", margin: "0px 0px 16px"}}>What can you do with FormX?</h2>
+            <h2 style={{ color: "#042a2b", fontWeight: "bold",  margin: "0px 0px 16px"}}>What can you do with FormX?</h2>
           </Col>
         </Row>
         <Row className="d-flex align-items-center justify-content-center" style={{ padding: "30px 0px"}}>

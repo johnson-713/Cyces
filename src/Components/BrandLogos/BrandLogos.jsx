@@ -2,14 +2,13 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const BrandLogos = () => {
   return (
-    <Container fluid style={{ backgroundColor: "#F2F2F2"}}>
-        <Container className="d-flex flex-column justify-content-center align-items-center pt-3 pb-3">
+    <Container fluid style={{ backgroundColor: "#F2F2F2",padding: "32px 0px"}} className="d-flex flex-column justify-content-center align-items-center">
       <Row>
         <Col className="mb-3">
-          <h3 style={{ color: "#042a2b", fontSize: "28px"}}>Get formX running in minutes</h3>
+          <h3 style={{ color: "#042a2b", fontWeight: "bold",  fontSize: "28px"}}>Get formX running in minutes</h3>
         </Col>
       </Row>
-      <Row  className="mb-3">
+      <Row className="text-center">
         <Col>
           <p style={{ color: "#666666", fontSize: "19.2px"}}>
             Harness the power of analytics, while integrating with the apps you
@@ -17,37 +16,45 @@ const BrandLogos = () => {
           </p>
         </Col>
       </Row>
-      <Row className="d-flex justify-content-around mb-3">
-        <Col sm className="ml-auto" style={{ padding: "0px 15px"}}>
+      <Row style={{width: "75%", height: "80px"}}>
+        <Col sm={3} style={{ padding: "0px !important", height: "70%"}}> 
+          <a href="#">
           <img
             src="https://formx.stream/assets/img/Slack.svg"
             alt="slack"
-            style={{ width: "100%", objectFit: "contain", padding: "10px", margin: "0px 31.5px", height: "65px"}}
+            style={{ width: "70%", objectFit: "contain", padding: "10px !important", margin: "0 auto !important"}}
           />
+          </a>
         </Col>
-        <Col sm className="ml-5" style={{ padding: "0px 15px"}}>
+        <Col sm={3} style={{ padding: "0px !important"}}>
+          <a href="#">
           <img
             src="https://formx.stream/assets/img/trello.png"
             alt="trello"
-            style={{ width: "100%", objectFit: "contain", padding: "10px", margin: "0px 31.5px", height: "65px"}}
+            style={{ width: "70%", objectFit: "contain", padding: "10px",  margin: "0 auto !important"}}
           />
+          </a>
         </Col>
-        <Col sm className="ml-5" style={{ padding: "0px 15px"}}>
+        <Col sm={3} style={{ padding: "0px !important"}}>
+          <a href="#">
           <img
             src="https://formx.stream/assets/img/sheets.png"
             alt="excel"
-            style={{ width: "100%", objectFit: "contain", padding: "10px", margin: "0px 31.5px", height: "80px"}}
+            style={{ width: "70%", height: "60%", objectFit: "contain", padding: "10px",  margin: "0 auto !important"}}
           />
+          </a>
         </Col>
-        <Col sm className="ml-5" style={{ padding: "0px 15px"}}>
+        <Col sm={3} style={{ padding: "0px !important"}}>
+          <a href="#">
           <img
             src="https://formx.stream/assets/img/salesforce.png"
             alt="salesforce"
-            style={{ width: "100%", objectFit: "contain", padding: "10px", margin: "0px 31.5px", height: "90px"}}
+            style={{ width: "70%", height: "70%", objectFit: "contain", padding: "10px",  margin: "0 auto !important"}}
           />
+          </a>
         </Col>
       </Row>
-      <Row  className="mb-3">
+      <Row>
         <Col>
           <a
             href="https://www.youtube.com/watch?v=TEhmeJdezbk"
@@ -66,7 +73,6 @@ const BrandLogos = () => {
           </a>
         </Col>
       </Row>
-    </Container>
     </Container>
   );
 };

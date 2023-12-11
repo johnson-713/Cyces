@@ -2,10 +2,16 @@ import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate()
     const navbarBackground = '#042a2b'
     const buttonBackground = '#ef7b45'
+
+    const handleSupportLink = () => {
+      navigate('/support')
+    }
 
     
   return (
@@ -19,7 +25,7 @@ const Header = () => {
           <Nav className="ml-auto">
             <Nav.Link href="#" className='text-light'>Features</Nav.Link>
             <Nav.Link href="#" className='text-light'>Pricing</Nav.Link>
-            <Nav.Link href='#' className='text-light'>Support</Nav.Link>
+            <Nav.Link href='/support' onClick={handleSupportLink} className='text-light'>Support</Nav.Link>
             <Nav.Link href="#" className='text-light'>Blog</Nav.Link>
             <Nav.Link href="#" className='text-light'>Instant Demo</Nav.Link>
             <Nav.Link href='#' className='text-light'>Agency</Nav.Link>
