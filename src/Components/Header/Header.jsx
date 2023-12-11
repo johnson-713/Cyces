@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useNavigate } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
   const navigate = useNavigate()
@@ -15,7 +16,7 @@ const Header = () => {
 
     
   return (
-    <Navbar expand="lg" className="bg-body-tertiary"  style={{ backgroundColor: navbarBackground, padding: "16px"}} >
+    <Navbar expand="lg" className="bg-body-tertiary navbar">
       <Container >
         <Navbar.Brand href="#">
             <img src='https://formx.stream/assets/img/formx-white.png' alt='logo' width={100} />
@@ -30,7 +31,7 @@ const Header = () => {
             <Nav.Link href="#" className='text-light'>Instant Demo</Nav.Link>
             <Nav.Link href='#' className='text-light'>Agency</Nav.Link>
             <Nav.Link href='#' className='text-light'>Login</Nav.Link>
-            <Button style={{ backgroundColor: buttonBackground, border: "none", padding: "10px 24px", fontWeight: "bold"}}>Get started</Button>
+            <Button className='navButton'>Get started</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

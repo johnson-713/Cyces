@@ -1,0 +1,19 @@
+.containers {
+    background-color: #cdedf6;
+    padding: 32px 0px;
+}
+
+.row-one > h3 {
+    margin: 10px;
+}
+
+.signUpButton {
+    background-color: #ef7b45;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}

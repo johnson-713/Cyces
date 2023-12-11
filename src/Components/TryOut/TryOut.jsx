@@ -1,24 +1,17 @@
 import { Button, Col, Row, Container } from "react-bootstrap";
+import './TryOut.css'
 
 const TryOut = () => {
     return (
-        <Container fluid style={{ backgroundColor: "#cdedf6", padding: "32px 0px"}}>
+        <Container fluid className="containers">
             <Container>
             <Row>
-                <Col className="text-right">
-                <h3 style={{ margin: "10px"}}>Try out formX</h3>
+                <Col className="text-right column-one">
+                <h3>Try out formX</h3>
                 </Col>
                 <Col>
-                <Button 
-                    style={{
-                        backgroundColor: "#ef7b45", 
-                        border: "none", 
-                        fontSize: "18px", 
-                        fontWeight: "bold", 
-                        padding: "10px 24px",
-                        display: "flex",
-                        flexWrap: "wrap",
-                        alignContent: "stretch"}}
+                <Button
+                    className="signUpButton"
                 >
                     Start Now For Free
                 </Button>

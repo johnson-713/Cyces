@@ -1,0 +1,35 @@
+.row-one {
+    background-color: #042a2b;
+    color: #ffffff;
+    padding: 64px 32px;
+}
+
+.row-one > h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.row-two {
+    padding: 32px 0px;
+}
+
+.row-two > h2 {
+    margin-bottom: 16px;
+}
+
+.row-two > h4 {
+    margin-bottom: 16px;
+}
+
+.inputsAndSelects {
+    padding: 8px 16px;
+    border-radius: 3px;
+}
+
+.formButton {
+    background-color: #ef7b45;
+    margin-top: 1rem;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+}
