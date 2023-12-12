@@ -1,20 +1,21 @@
 import { Col, Row, Container } from "react-bootstrap";
+import './Uses.css'
 
 const Uses = () => {
   return (
-    <Container fluid style={{ backgroundColor: "#ffffff", padding: "32px 0px"}}>
-      <Container className="d-flex flex-column justify-content-center align-items-center">
-        <Row>
+    <Container fluid className="outer_container">
+      <Container className="d-flex flex-column justify-content-center align-items-center inner_container">
+        <Row className="header_row">
           <Col>
-            <h2 style={{ color: "#042a2b", fontWeight: "bold",  margin: "0px 0px 16px"}}>What can you do with FormX?</h2>
+            <h2>What can you do with FormX?</h2>
           </Col>
         </Row>
-        <Row className="d-flex align-items-center justify-content-center" style={{ padding: "30px 0px"}}>
+        <Row className="d-flex align-items-center justify-content-center cards_row">
           <Col sm className="d-flex flex-column align-items-center">
             <img
+              className="cards_row-img"
               src="https://formx.stream/assets/img/workflow.svg"
               alt="workflow"
-              style={{ objectFit: "contain", maxHeight: "60px", margin: "15px 0px", maxWidth: "60px"}}
             />
             <p className="text-center">
               <b>Streamline </b>
@@ -23,9 +24,9 @@ const Uses = () => {
           </Col>
           <Col sm className="d-flex flex-column align-items-center">
             <img
+              className="cards_row-img"
               src="https://formx.stream/assets/img/dashboard.svg"
               alt="dashboard"
-              style={{objectFit: "contain", maxHeight: "60px", margin: "15px 0px", maxWidth: "60px"}}
             />
             <p className="text-center">
               <b>Manage </b>
@@ -34,9 +35,9 @@ const Uses = () => {
           </Col>
           <Col sm className="d-flex flex-column align-items-center">
             <img
+              className="cards_row-img"
               src="https://formx.stream/assets/img/collaboration.svg"
               alt="collab"
-              style={{objectFit: "contain", maxHeight: "60px", margin: "15px 0px", maxWidth: "60px"}}
             />
             <p className="text-center">
               <b>Collaborate </b>
