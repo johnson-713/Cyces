@@ -1,36 +1,37 @@
-.footerAbove__container {
+.pricingFA__container {
     background-color: #042a2b;
     padding: 32px 0px;
 }
 
-.footerAbove__row1 > h3 {
+.pricingFA__row1 > h3 {
     color: #ffffff;
     font-weight: 600;
     margin-bottom: 16px;
 }
 
-.footerAbove__row2 {
+.pricingFA__row2 {
     margin-top: 16px;
     padding: 16px 30px;
 }
 
-.footerAbove__row2 > input {
+.pricingFA__row2 > input {
     font-size: 20px;
     border: none;
     border-radius: 3px;
     padding: 8px 16px;
+    width: 233px;
 }
 
-.footerAbove__row2 > Button {
+.pricingFA__row2 > button {
     background-color: #ef7b45;
     color: #ffffff;
     border: none;
-    padding: 10px 24px;
+    padding: 8px 24px;
     font-weight: 600;
     font-size: 18px;
     border-radius: 3px;
 }
 
-.footerAbove__row2 > Button:hover {
+.pricingFA__row2 > button:hover {
     background-color: #dc3545;
 }

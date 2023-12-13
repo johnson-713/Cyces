@@ -1,0 +1,48 @@
+.brandLogo__container {
+    background-color: #f2f2f2;
+    padding: 32px 0px;
+}
+
+.brandLogo__row1--column > h3 {
+    color: #042a2b;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.brandLogo__row2--column > p {
+    color: #666666;
+    font-size: 19.2px;
+}
+
+.brandLogo__row3 {
+    width: 75%;
+}
+
+.brandLogo__slack {
+    width: 70%;
+    object-fit: contain;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.brandLogo__trello {
+    width: 70%;
+    object-fit: contain;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.brandLogo__sheets {
+    width: 70%;
+    object-fit: contain;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.brandLogo__salesforce {
+    width: 70%;
+    object-fit: contain;
+    padding: 10px;
+    margin: 0 auto;
+}

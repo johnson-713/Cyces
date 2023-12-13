@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import './UseProperties.css'
 
 const UseProperties = () => {
     const data = [
@@ -23,9 +24,9 @@ const UseProperties = () => {
         },
     ]
   return (
-    <Container fluid className='d-flex flex-column align-items-center' style={{backgroundColor: "#cdedf6", padding: "32px 0px"}}>
-      <Row className="text-center">
-        <h2 style={{marginBottom: "16px", fontWeight: "bold", }}>Where can you use formX?</h2>
+    <Container fluid className='d-flex flex-column align-items-center useProp__container'>
+      <Row className="text-center useProp__rowHeader">
+        <h2>Where can you use formX?</h2>
       </Row>
       <Row>
         <Col lg={12}>
@@ -35,13 +36,13 @@ const UseProperties = () => {
         </p>
         </Col>
       </Row>
-      <Row style={{width: "75%"}}>
+      <Row className="useProp__rowCards">
         {data.map(item => {
             return (
-                <Col key={item.id} md className='d-flex flex-column text-center align-items-center' style={{padding: "20px 15px"}}>
-                    <img src={item.img} alt={item.title} style={{width: "100px", height: "100px", margin: "16px"}}/>
-                    <h5 style={{ fontSize: "16px", marginBottom: "16px", color: "#042a2b"}}>{item.title}</h5>
-                    <p style={{color: "#666666"}}>{item.details}</p>
+                <Col key={item.id} sm className='d-flex flex-column text-center align-items-center useProp__rowCards--column'>
+                    <img src={item.img} alt={item.title} />
+                    <h5>{item.title}</h5>
+                    <p>{item.details}</p>
                 </Col>
             )
         })}

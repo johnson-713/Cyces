@@ -3,8 +3,19 @@
     padding: 32px 0px;
 }
 
-.row-one > h3 {
+.containers__column1 {
+    display: flex;
+        justify-content: end;
+}
+
+.containers__column2 {
+    display: flex;
+        justify-content: start;
+}
+
+.containers__header {
     margin: 10px;
+    font-weight: 600;
 }
 
 .signUpButton {
@@ -13,7 +24,20 @@
     font-size: 18px;
     font-weight: 600;
     padding: 10px 24px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
+}
+
+.signUpButton:hover {
+    background-color: #dc3545;
+}
+
+@media screen and (max-width: 770px) and (min-width: 300px) {
+    .containers__column1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containers__column2 {
+        display: flex;
+        justify-content: center;
+    }
 }

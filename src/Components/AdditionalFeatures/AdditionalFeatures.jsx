@@ -1,5 +1,5 @@
-import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
+import './AdditionalFeatures.css'
 
 const AdditionalFeatures = () => {
     const data = [
@@ -54,29 +54,31 @@ const AdditionalFeatures = () => {
     ]
 
   return (
-    <Container fluid className='d-flex flex-column align-items-center' style={{padding: "32px 0px"}}>
-        <Row>
-            <Col>
-                <h2 style={{ margin: "0px 0px 16px", fontWeight: "bold", padding: "0px 15px"}}>What do we have?</h2>
+    <Container fluid className='d-flex flex-column align-items-center addFeatures__container'>
+        <Row className='d-flex text-center addFeatures__row1'>
+            <Col  className='addFeatures__row1--column'>
+                <h2>What do we have?</h2>
             </Col>
         </Row>
-        <Row style={{ gap: "1rem", width: "75%", marginBottom: "1rem"}}>
+        <Row className='addFeatures__rowCards'>
             {data.slice(0, 4).map(item => {
                 return(
-                    <Col className='d-flex flex-column text-center align-items-center'  key={item.id} sm style={{ backgroundColor: "#f2f2f2", padding: "15px", width: "40%"}} >
-                    <img src={item.img} alt={item.title} style={{width: "50px", height: "50px", margin: "5px 5px 15px"}}/>
-                    <h4 style={{ fontSize: "20.8px", fontWeight: "bold",  color: "#222222"}}>{item.title}</h4>
+                    <Col className='d-flex flex-column text-center align-items-center addFeatures__rowCards--column'  key={item.id} xs={12}
+                    lg={3} >
+                    <img src={item.img} alt={item.title}/>
+                    <h4>{item.title}</h4>
                     <p style={{color: "#666666"}}>{item.details}</p>
                 </Col>
                 )
             })}
         </Row>
-        <Row style={{ gap: "1rem", width: "75%", marginBottom: "1rem"}}>
+        <Row className='addFeatures__rowCards'>
             {data.slice(4, 8).map(item => {
                 return(
-                    <Col className='d-flex flex-column text-center align-items-center'  key={item.id} sm style={{ backgroundColor: "#f2f2f2", padding: "15px", width: "40%"}} >
-                    <img src={item.img} alt={item.title} style={{width: "50px", height: "50px", margin: "5px 5px 15px"}}/>
-                    <h4 style={{ fontSize: "20.8px", fontWeight: "bold", color: "#222222"}}>{item.title}</h4>
+                    <Col className='d-flex flex-column text-center align-items-center addFeatures__rowCards--column'  key={item.id} xs={12}
+                    lg={3}>
+                    <img src={item.img} alt={item.title}/>
+                    <h4>{item.title}</h4>
                     <p style={{color: "#666666"}}>{item.details}</p>
                 </Col>
                 )

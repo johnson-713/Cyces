@@ -1,0 +1,42 @@
+.addFeatures__container {
+    padding: 32px 0px;
+}
+
+.addFeatures__row1--column > h2 {
+    margin: 0px 0px 16px;
+    font-weight: 600;
+    padding: 0px 15px;
+}
+
+.addFeatures__rowCards {
+    gap: 1rem;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.addFeatures__rowCards--column {
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    flex: 1;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.addFeatures__rowCards--column:hover {
+    scale: 1.02;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addFeatures__rowCards--column > img {
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 15px;
+}
+
+.addFeatures__rowCards--column > h4 {
+    font-size: 20.8px;
+    font-weight: 600;
+    color: #222222;
+
+}
+

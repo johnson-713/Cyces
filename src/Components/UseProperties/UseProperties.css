@@ -1,0 +1,38 @@
+.useProp__container {
+    background-color: #cdedf6;
+    padding: 32px 0px;
+}
+
+.useProp__rowHeader > h2 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.useProp__rowCards {
+    width: 75%;
+}
+
+.useProp__rowCards--column {
+    padding: 20px 15px;
+}
+
+.useProp__rowCards--column:hover {
+    background-color: #ffffff;
+}
+
+.useProp__rowCards--column > img {
+    width: 100px;
+    height: 100px;
+    margin: 16px;
+}
+
+.useProp__rowCards--column > h5 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #042a2b;
+    font-weight: 600;
+}
+
+.useProp__rowCards--column > p {
+    color: #666666;
+}

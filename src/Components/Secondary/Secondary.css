@@ -1,3 +1,39 @@
+.secondary__container {
+    background-color: #042a2b;
+    color: #ffffff;
+    min-height: 630px;
+    padding: 64px 32px;
+}
+
+.secondary__container--column1 > h1 {
+    font-size: 48px;
+}
+
+.secondary__container--column1 > p {
+    font-size: 24px;
+    color: #cdedf6;
+}
+
+.secondary__container--column1 > form > input {
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+}
+
+.secondary__container--column1 > form > button {
+    background-color: #ef7b45;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.secondary__container--column1 > form > button:hover {
+    background-color: #dc3545;
+}
+
 .hero__image {
     width: 100% !important;
     height: auto !important;

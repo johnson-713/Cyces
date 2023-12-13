@@ -19,7 +19,7 @@ const Support = () => {
                 <h4>
                     Our current response time is about 30 minutes.
                 </h4>
-                <Form style={{width: "45%"}}>
+                <Form>
                     <Form.Group className="mb-3">
                         <Form.Label className="d-flex text-left">Your Name</Form.Label>
                         <Form.Control type="text" placeholder="Your First Name" className="inputsAndSelects"/>

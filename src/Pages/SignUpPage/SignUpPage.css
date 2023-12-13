@@ -1,0 +1,30 @@
+.signUp-outerContainer {
+    background-color: #ededed;
+    height: 100vh;
+}
+
+.signUp-innerContainer {
+    background-color: #ffffff;
+    width: 50%;
+}
+
+.signUp-innerContainer > img {
+    margin: 25px auto;
+    width: 100px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.registerButton {
+    font-size: 20px;
+    border: none;
+    background-color: #5Eb1BF;
+    color: #ffffff;
+    padding: 4.8px 16px;
+    margin: 25px auto 10px;
+    border-radius: 3px;
+}
+
+.signUp-innerContainer > span {
+    margin-bottom: 20px;
+}

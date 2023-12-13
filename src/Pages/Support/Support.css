@@ -4,16 +4,24 @@
     padding: 64px 32px;
 }
 
+Form {
+    width: 45%;
+}
+
 .row-one > h1 {
     font-size: 48px;
     margin-bottom: 16px;
+    font-weight: 600;
 }
 
 .row-two {
-    padding: 32px 0px;
+    padding: 32px 15px;
 }
 
 .row-two > h2 {
+    font-weight: 600;
+    color: #2c2c2c;
+    color: #2c2c2c;
     margin-bottom: 16px;
 }
 
@@ -32,4 +40,14 @@
     border: none;
     padding: 10px 24px;
     font-weight: 600;
+}
+
+.formButton:hover {
+    background-color: #dc3545;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    Form {
+        width: 80%;
+    }
 }

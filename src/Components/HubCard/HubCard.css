@@ -1,29 +1,26 @@
-.hubCard-one {
-    background-image: url("https://formx.stream/assets/img/docs.png");
+.hubcard {
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: left top;
     background-position-x: -1.5rem;
     background-position-y: -1.5rem;
     border-radius: 3px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.hubcard:hover {
+    scale: 1.02;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hubCard-one {
+    background-image: url("https://formx.stream/assets/img/docs.png");
 }
 
 .hubCard-two {
     background-image: url("https://formx.stream/assets/img/map.png");
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: left top;
-    background-position-x: -1.5rem;
-    background-position-y: -1.5rem;
-    border-radius: 3px;
 }
 
 .hubCard-three {
     background-image: url("https://formx.stream/assets/img/question.png");
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: left top;
-    background-position-x: -1.5rem;
-    background-position-y: -1.5rem;
-    border-radius: 3px;
 }

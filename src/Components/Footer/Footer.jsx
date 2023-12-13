@@ -1,30 +1,47 @@
 import { Container, Row, Col } from "react-bootstrap";
+import './Footer.css'
 
 
 const Footer = () => {
   return (
-    <Container fluid className="d-flex flex-column align-items-center" style={{backgroundColor: "#042a2b", padding: "48px 0px 32px"}}>
+    <Container fluid className="d-flex flex-column align-items-center footer__container">
         <Row>
-            <img src="https://formx.stream/assets/img/formx-white.png" alt="logo" style={{margin: "10px", width: "120px"}}/>
+            <img src="https://formx.stream/assets/img/formx-white.png" className="footer__logo" alt="logo"/>
         </Row>
-        <Row className="d-flex justify-content-center" style={{color: "#ffffff", width: "80%"}}>
-            <p style={{padding: "15px"}}>Badge Program</p>
-            <p style={{padding: "15px"}}>About Our Team</p>
-            <p style={{padding: "15px"}}>Contact Us</p>
-            <p style={{padding: "15px"}}>Support</p>
-            <p style={{padding: "15px"}}>GDPR</p>
-            <p style={{padding: "15px"}}>Terms of Service</p>
-            <p style={{padding: "15px"}}>Privacy Policy</p>
-            <p style={{padding: "15px"}}>Refund Policy</p>
+        <Row className="d-flex justify-content-between mt-3" style={{color: "#ffffff", width: "80%"}}>
+        <Col xs={12} md className="text-center mb-3">
+            <a href="#" className="footer__links">Badge Program</a>
+          </Col>
+          <Col xs={12} md className="text-center mb-3">
+            <a href="#" className="footer__links">About Our Team</a>
+          </Col>
+          <Col xs={12} md className="text-center mb-3">
+            <a href="#" className="footer__links">Contact Us</a>
+          </Col>
+          <Col xs={12} md className="text-center mb-3">
+            <a href="/support" className="footer__links">Support</a>
+          </Col>
+          <Col xs={12} md className="text-center mb-3">
+            <a href="#" className="footer__links">GDPR</a>
+          </Col>
+          <Col xs={12} md className="text-center mb-3">
+            <a href="#" className="footer__links">Terms of Service</a>
+          </Col>
+          <Col xs={12} md className="text-center mb-3">
+            <a href="#" className="footer__links">Privacy Policy</a>
+          </Col>
+          <Col xs={12} md className="text-center mb-3">
+            <a href="#" className="footer__links">Refund Policy</a>
+          </Col>
         </Row>
-        <Row className="d-flex mt-5">
-        <span style={{fontSize: "12.8px"}}>
+        <Row className="d-flex text-left mt-5">
+        <span style={{fontSize: "12.8px", padding: "0px 20px"}}>
                           <span style={{color: "#5eb1bf"}}>© </span>
-                          <a href="http://cyces.co" style={{color: "#ffffff"}} target="_blank">Cyces Innovation Labs LLP. </a>
+                          <a href="http://cyces.co" className=" footer__links" target="_blank">Cyces Innovation Labs LLP. </a>
                             <span style={{color: "#5eb1bf"}}>All Rights Reserved.Icons from </span>
-                            <a href="https://flaticons.com" style={{color: "#ffffff"}} target="_blank">Flaticon. </a>
+                            <a href="https://flaticons.com" className=" footer__links" target="_blank">Flaticon. </a>
                             <span style={{color: "#5eb1bf"}}>Illustrations from </span>
-                            <a href="https://undraw.co" style={{color: "#ffffff"}} target="_blank">Undraw</a>
+                            <a href="https://undraw.co" className=" footer__links" target="_blank">Undraw</a>
                     </span>
         </Row>
     </Container>
