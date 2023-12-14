@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, NavDropdown } from "react-bootstrap";
+import { Container, Row, Col, Button, Dropdown } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Footer from "../../Components/Footer/Footer";
@@ -12,7 +12,21 @@ const Features = () => {
     <div>
       <Header />
       <Navbar expand="lg" sticky="top" className="bg-body-tertiary features">
-      <Container>
+      <Container style={{width: "100%"}}>
+      <Dropdown size="lg" className="d-lg-none">
+        <Dropdown.Toggle id="dropdown-basic" className="text-left">Features{""}</Dropdown.Toggle>
+        <Dropdown.Menu>
+        <Dropdown.Item href="#collect">Collect</Dropdown.Item>
+          <Dropdown.Item href="#monitor">Monitor</Dropdown.Item>
+          <Dropdown.Item href='#actions'>Actions</Dropdown.Item>
+          <Dropdown.Item href='#colloborate'>Collobrate</Dropdown.Item>
+          <Dropdown.Item href="#notifications">Notifications</Dropdown.Item>
+          <Dropdown.Item href="#analytics">Analytics</Dropdown.Item>
+          <Dropdown.Item href='#agency'>Agency</Dropdown.Item>
+          <Dropdown.Item href='#'>Beyond</Dropdown.Item>
+        </Dropdown.Menu>
+        </Dropdown>
+          <Navbar.Collapse className="d-lg-block" id="reponsive-navbar-nav">
           <Nav className="d-flex justify-content-between w-100" style={{padding: "0px 15px", margin: "0px 31.2px"}}>
             <Nav.Link href="#collect" style={{padding: "12px 6px", color: "#ffffff"}}>Collect</Nav.Link>
             <Nav.Link href="#monitor" style={{padding: "12px 6px", color: "#ffffff"}}>Monitor</Nav.Link>
@@ -23,6 +37,7 @@ const Features = () => {
             <Nav.Link href='#agency' style={{padding: "12px 6px", color: "#ffffff"}}>Agency</Nav.Link>
             <Nav.Link href='#' style={{padding: "12px 6px", color: "#ffffff"}}>Beyond</Nav.Link>
           </Nav>
+          </Navbar.Collapse>
       </Container>
     </Navbar>
       <div className="d-flex flex-column text-center features-heading">
@@ -91,8 +106,7 @@ const Features = () => {
               </ul>
             </Col>
           </Row>
-          <Row className="features-row">
-          <Col className="d-flex flex-row"  id="monitor">
+          <Row className="features-row"  id="monitor">
           <Col sm={4} lg={{ order: 'first' }} md={{ order: 'last' }}>
               <img
                 src="https://formx.stream/assets/img/monitor.svg"
@@ -134,7 +148,6 @@ const Features = () => {
                 </li>
               </ul>
             </Col>
-          </Col>
           </Row>
           <Row className="features-row" id="actions">
           <Col sm={4} lg={{ order: 'last' }} md={{ order: 'first' }}>

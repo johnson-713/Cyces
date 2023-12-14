@@ -2,12 +2,11 @@ import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
   const navigate = useNavigate()
-  const location = useLocation()
 
     const handleSignUp = () => {
       navigate('/signUp')
@@ -17,15 +16,13 @@ const Header = () => {
       navigate('/')
     }
 
-    const isSticky = location.pathname === '/Blog' || 'blogPage1'
-    
   return (
-    <Navbar expand="lg" className={`bg-body-tertiary navbar ${isSticky ? 'sticky' : ''}`}>
+    <Navbar expand="lg" className="bg-body-tertiary navbar">
       <Container >
         <Navbar.Brand href="/" onClick={handleHomeLink}>
             <img src='https://formx.stream/assets/img/formx-white.png' alt='logo' width={100} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle id='navbar-toggler-icon' aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/features" className='text-light'>Features</Nav.Link>

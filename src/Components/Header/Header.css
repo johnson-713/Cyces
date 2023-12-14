@@ -10,13 +10,16 @@
     font-weight: 600;
 }
 
+#navbar-toggler-icon {
+    border-color: #ffffff;
+}
+
 .navButton:hover {
     background-color: #dc3545;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .navButton {
+        width: 40%;
+    }
 }

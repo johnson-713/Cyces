@@ -19,13 +19,13 @@ const Blog = () => {
       >
         <h1>Blog</h1>
       </Container>
-      <Container fluid className="blogCard-container">
+      <Container className="blogCard-container">
         <div className="blogCard-innerContainer">
         <Card className="blogCard">
           <Card.Title className="blogCard-title">
             <a href="/blogpage1">
               <h3>
-                How To Choose The Right Colour For A Call-To-Action Button
+                How To Choose The Right Colour For A Call-To-Action Button Hello World Hello hello hello Button Hello World Hello hello hello hello hello hello hello hello
               </h3>
             </a>
           </Card.Title>

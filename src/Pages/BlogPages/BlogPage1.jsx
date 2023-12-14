@@ -36,7 +36,7 @@ const BlogPage1 = () => {
         </p>
         <p>
           Read more:{" "}
-          <a href="#">
+          <a href="#"  className="content-link">
             The A to Z of LLMOps: Unraveling the Tasks That Drive Large Language
             Model Success
           </a>
@@ -50,7 +50,7 @@ const BlogPage1 = () => {
             the user. Using colours effectively will help you communicate with
             users in an easy way and ensure more conversions for your business.{" "}
           </span>
-          Freshboost, our <a href="#">web agency,</a>, is dedicated to
+          Freshboost, our <a href="#"  className="content-link">web agency,</a>, is dedicated to
           leveraging these color concepts and psychological principles to create
           visually appealing and highly effective CTA buttons, ultimately
           boosting conversion rate optimization (CRO) for our clients’ websites.
@@ -136,7 +136,7 @@ const BlogPage1 = () => {
         </p>
         <p>
           Read More:
-          <a href="#"> How to choose the right agency to build your MVP </a>
+          <a href="#"  className="content-link"> How to choose the right agency to build your MVP </a>
         </p>
         <h2>
           <b>Red CTA Buttons: For time-sensitive offers</b>

@@ -72,3 +72,9 @@
 .icons-link:hover {
     color: #222222;
 }
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    .blogPage1-contentContainer {
+        padding: 0px 2rem;
+    }
+}

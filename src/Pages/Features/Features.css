@@ -21,6 +21,13 @@
     color: #5EB1BF;
 }
 
+#dropdown-basic {
+    color: #ffffff;
+    background-color: #3A6061;
+    border: none;
+    width: 100%;
+}
+
 .features-container {
     margin: 32px 0px;
     padding: 32px 0px;
