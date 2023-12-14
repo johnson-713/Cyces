@@ -1,0 +1,94 @@
+.blogHeader {
+    position: sticky;
+}
+
+.blog_HB {
+    background-color: #042a2b;
+    color: #ffffff;
+    padding: 15px 0px;
+}
+
+.blog_HB > h1 {
+    font-size: 48px;
+    font-weight: 600;
+    padding: 50px 0px 80px;
+}
+
+.blogCard-container {
+    background-color: #ffffff;
+    padding: 50px 0px;
+}
+
+.blogCard-innerContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    align-content: center;
+    margin: 0 50px;
+}
+
+.blogCard {
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+}
+
+.blogCard-title {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.blogCard-title > a > h3 {
+    font-size: 25px;
+    color: #2a3848;
+    font-weight: 600;
+    padding: 0px 25px;
+    margin: 25px 0px 16px;
+}
+
+.blogCard-title > a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.blogCard-text {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.blogCard-text > p {
+    font-size: 19.4px;
+    color: #222222;
+    padding: 20px 25px;
+    margin: 10px 0px;
+}
+
+.blogButton {
+    background-color: #ef7b45;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 10px 24px;
+    margin: 30px 0px 20px 25px;
+}
+
+.blogButton:hover {
+    background-color: #dc3545;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .blogCard-innerContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 599px) {
+    .blogCard-innerContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

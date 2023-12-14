@@ -1,12 +1,19 @@
 import { Container, Row, Col } from "react-bootstrap";
 import './Footer.css'
+import { useNavigate } from "react-router-dom";
 
 
 const Footer = () => {
+  const navigate = useNavigate()
+
+  const handleHomeLink = () => {
+    navigate('/')
+  }
+
   return (
     <Container fluid className="d-flex flex-column align-items-center footer__container">
         <Row>
-            <img src="https://formx.stream/assets/img/formx-white.png" className="footer__logo" alt="logo"/>
+            <img onClick={handleHomeLink} src="https://formx.stream/assets/img/formx-white.png" className="footer__logo" style={{cursor: "pointer"}} alt="logo"/>
         </Row>
         <Row className="d-flex justify-content-between mt-3" style={{color: "#ffffff", width: "80%"}}>
         <Col xs={12} md className="text-center mb-3">

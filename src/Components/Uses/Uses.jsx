@@ -7,7 +7,7 @@ const Uses = () => {
       <Container className="d-flex flex-column justify-content-center align-items-center inner_container">
         <Row className="header_row">
           <Col>
-            <h2>What can you do with FormX?</h2>
+            <h2 >What can you do with FormX?</h2>
           </Col>
         </Row>
         <Row className="d-flex align-items-center justify-content-center cards_row">
