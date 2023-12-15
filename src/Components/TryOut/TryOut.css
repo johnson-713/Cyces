@@ -36,8 +36,8 @@
         justify-content: center;
     }
 
-    .containers__column2 {
+    .containers__column2  {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 }

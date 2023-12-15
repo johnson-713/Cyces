@@ -3,6 +3,7 @@ import './HubCard.css'
 
 
 const HubCard = () => {
+  
   return (
     <Container fluid className="d-flex flex-column align-items-center" style={{padding: "32px 0px"}}>
         <Row style={{marginBottom: "16px"}}>
@@ -11,14 +12,14 @@ const HubCard = () => {
             </Col>
         </Row>
         <Row style={{gap: "2rem", width: "75%"}}>
-            <Col className="hubCard-one hubcard" style={{backgroundColor: "#042a2b", margin: "9.6px"}} md>
-            <h3 className="text-right" style={{color: "#5eb1bf", fontWeight: "bold", padding: "48px 32px", marginBottom: "16px", textDecoration: "underline"}}>Pricing</h3>
+            <Col className="hubCard-one hubcard" style={{backgroundColor: "#042a2b"}} md>
+            <h3 className="text-right hubLink" style={{color: "#5eb1bf"}}>Pricing</h3>
             </Col>
-            <Col className="hubCard-two hubcard" style={{backgroundColor: "#5eb1bf", margin: "9.6px"}} md>
-            <h3 className="text-right" style={{color: "#ffffff", fontWeight: "bold", padding: "48px 32px", marginBottom: "16px", textDecoration: "underline"}}>Guides</h3>
+            <Col className="hubCard-two hubcard" style={{backgroundColor: "#5eb1bf"}} md>
+            <h3 className="text-right hubLink" style={{color: "#ffffff"}}>Guides</h3>
             </Col>
-            <Col className="hubCard-three hubcard" style={{backgroundColor: "#f2f2f2", margin: "9.6px"}} md>
-            <h3 className="text-right" style={{color: "#5eb1bf", fontWeight: "bold", padding: "48px 32px",marginBottom: "16px", textDecoration: "underline"}}>FAQs</h3>
+            <Col className="hubCard-three hubcard" style={{backgroundColor: "#f2f2f2"}} md>
+            <h3 className="text-right hubLink" style={{color: "#5eb1bf"}}>FAQs</h3>
             </Col>
         </Row>
     </Container>

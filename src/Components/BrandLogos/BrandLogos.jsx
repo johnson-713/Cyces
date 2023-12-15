@@ -2,6 +2,30 @@ import { Col, Container, Row } from "react-bootstrap";
 import './BrandLogos.css'
 
 const BrandLogos = () => {
+  const data = [
+    {
+      id: 1,
+      link: "https://formx.stream/assets/img/Slack.svg",
+      name: "slack"
+    },
+    {
+      id: 2,
+      link: "https://formx.stream/assets/img/trello.png",
+      name: "trello"
+    },
+    {
+      id: 3,
+      link: "https://formx.stream/assets/img/sheets.png",
+      name: "sheets",
+      height: 80
+    },
+    {
+      id: 4,
+      link: "https://formx.stream/assets/img/salesforce.png",
+      name: "salesforce",
+      height: 80
+    },
+  ]
   return (
     <Container fluid className="d-flex flex-column justify-content-center align-items-center brandLogo__container">
       <Row className="text-center brandLogo__row1">
@@ -17,45 +41,22 @@ const BrandLogos = () => {
           </p>
         </Col>
       </Row>
-      <Row className="brandLogo__row3">
-        <Col className="d-flex justify-content-center brandLogo__row3--column" sm={3}> 
-          <a href="#">
-          <img
-            className="brandLogo__slack"
-            src="https://formx.stream/assets/img/Slack.svg"
-            alt="slack"
-          />
-          </a>
-        </Col>
-        <Col className="brandLogo__row3--column" sm={3}>
-          <a href="#">
-          <img
-            className="brandLogo__trello"
-            src="https://formx.stream/assets/img/trello.png"
-            alt="trello"
-          />
-          </a>
-        </Col>
-        <Col className="brandLogo__row3--column" sm={3}>
-          <a href="#">
-          <img
-            className="brandLogo__sheets"
-            src="https://formx.stream/assets/img/sheets.png"
-            alt="excel"
-            height={80}
-          />
-          </a>
-        </Col>
-        <Col className="brandLogo__row3--column" sm={3}>
-          <a href="#">
-          <img
-            className="brandLogo__salesforce"
-            src="https://formx.stream/assets/img/salesforce.png"
-            alt="salesforce"
-            height={90}
-          />
-          </a>
-        </Col>
+      <Row className="brandLogo__row3">   
+        {data.map(items => {
+          return (
+            <Col className="brandLogo__row3--column" sm={3}>
+              <a href="#">
+            <img
+              key={items.id}
+              src={items.link}
+              alt={items.name}
+              className="brandLogo__image"
+              height={items.height}
+              />
+              </a>
+              </Col>
+          )
+        })}
       </Row>
       <Row className="brandLogo__row4">
         <Col className="brandLogo__row4--column">

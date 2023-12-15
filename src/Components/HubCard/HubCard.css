@@ -6,11 +6,24 @@
     background-position-y: -1.5rem;
     border-radius: 3px;
     transition: box-shadow 0.3s ease-in-out;
+    margin: 9.6px;
 }
 
 .hubcard:hover {
     scale: 1.02;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hubLink {
+    font-weight: 600;
+    padding: 48px 32px;
+    margin-bottom: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hubLink:hover{
+    text-decoration: none;
 }
 
 .hubCard-one {

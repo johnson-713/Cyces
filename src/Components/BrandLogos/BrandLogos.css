@@ -18,7 +18,12 @@
     width: 75%;
 }
 
-.brandLogo__slack {
+.brandLogo__row3--column {
+    margin-bottom: 1rem;
+    align-content: center;
+}
+
+.brandLogo__image {
     width: 70%;
     object-fit: contain;
     padding: 10px;
@@ -26,23 +31,3 @@
 
 }
 
-.brandLogo__trello {
-    width: 70%;
-    object-fit: contain;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.brandLogo__sheets {
-    width: 70%;
-    object-fit: contain;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.brandLogo__salesforce {
-    width: 70%;
-    object-fit: contain;
-    padding: 10px;
-    margin: 0 auto;
-}

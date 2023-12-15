@@ -10,37 +10,63 @@ const Footer = () => {
     navigate('/')
   }
 
+  const data = [
+    {
+      id: 1,
+      href: "#",
+      title: "Badge Program"
+    },
+    {
+      id: 2,
+      href: "#",
+      title: "About Our Team"
+    },
+    {
+      id: 3,
+      href: "#",
+      title: "Contact Us"
+    },
+    {
+      id: 4,
+      href: "/support",
+      title: "Support"
+    },
+    {
+      id: 5,
+      href: "#",
+      title: "GDPR"
+    },
+    {
+      id: 6,
+      href: "#",
+      title: "Terms of Service"
+    },
+    {
+      id: 7,
+      href: "#",
+      title: "Privacy Policy"
+    },
+    {
+      id: 8,
+      href: "#",
+      title: "Refund Policy"
+    },
+  ]
   return (
     <Container fluid className="d-flex flex-column align-items-center footer__container">
         <Row>
             <img onClick={handleHomeLink} src="https://formx.stream/assets/img/formx-white.png" className="footer__logo" style={{cursor: "pointer"}} alt="logo"/>
         </Row>
-        <Row className="d-flex justify-content-between mt-3" style={{color: "#ffffff", width: "80%"}}>
-        <Col xs={12} md className="text-center mb-3">
-            <a href="#" className="footer__links">Badge Program</a>
-          </Col>
-          <Col xs={12} md className="text-center mb-3">
-            <a href="#" className="footer__links">About Our Team</a>
-          </Col>
-          <Col xs={12} md className="text-center mb-3">
-            <a href="#" className="footer__links">Contact Us</a>
-          </Col>
-          <Col xs={12} md className="text-center mb-3">
-            <a href="/support" className="footer__links">Support</a>
-          </Col>
-          <Col xs={12} md className="text-center mb-3">
-            <a href="#" className="footer__links">GDPR</a>
-          </Col>
-          <Col xs={12} md className="text-center mb-3">
-            <a href="#" className="footer__links">Terms of Service</a>
-          </Col>
-          <Col xs={12} md className="text-center mb-3">
-            <a href="#" className="footer__links">Privacy Policy</a>
-          </Col>
-          <Col xs={12} md className="text-center mb-3">
-            <a href="#" className="footer__links">Refund Policy</a>
-          </Col>
-        </Row>
+        <div className="footer__div">
+          {
+            data.map(items => {
+              return (
+                  <a key={items.id} href={items.href}>{items.title}</a>
+              )
+            })
+          }
+        </div>
+        <br />
         <Row className="d-flex text-left mt-5">
         <span style={{fontSize: "12.8px", padding: "0px 20px"}}>
                           <span style={{color: "#5eb1bf"}}>© </span>

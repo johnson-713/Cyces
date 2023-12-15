@@ -8,6 +8,49 @@ import HubCard from "../../Components/HubCard/HubCard";
 import "./Features.css";
 
 const Features = () => {
+  const data = [
+    {
+      id: 1,
+      href: "#collect",
+      item: "Collect"
+    },
+    {
+      id: 2,
+      href: "#monitor",
+      item: "Monitor"
+    },
+    {
+      id: 3,
+      href: "#actions",
+      item: "Actions"
+    },
+    {
+      id: 4,
+      href: "#colloborate",
+      item: "Colloborate"
+    },
+    {
+      id: 5,
+      href: "#notifications",
+      item: "Notifications"
+    },
+    {
+      id: 6,
+      href: "#analytics",
+      item: "Analytics"
+    },
+    {
+      id: 7,
+      href: "#agency",
+      item: "Agency"
+    },
+    {
+      id: 8,
+      href: "#beyond",
+      item: "Beyond"
+    },
+  ]
+
   return (
     <div>
       <Header />
@@ -16,26 +59,20 @@ const Features = () => {
       <Dropdown size="lg" className="d-lg-none">
         <Dropdown.Toggle id="dropdown-basic" className="text-left">Features{""}</Dropdown.Toggle>
         <Dropdown.Menu>
-        <Dropdown.Item href="#collect">Collect</Dropdown.Item>
-          <Dropdown.Item href="#monitor">Monitor</Dropdown.Item>
-          <Dropdown.Item href='#actions'>Actions</Dropdown.Item>
-          <Dropdown.Item href='#colloborate'>Collobrate</Dropdown.Item>
-          <Dropdown.Item href="#notifications">Notifications</Dropdown.Item>
-          <Dropdown.Item href="#analytics">Analytics</Dropdown.Item>
-          <Dropdown.Item href='#agency'>Agency</Dropdown.Item>
-          <Dropdown.Item href='#'>Beyond</Dropdown.Item>
+          {data.map(items => {
+            return (
+              <Dropdown.Item href={items.href} key={items.id} style={{width: "375px", padding: "10px"}}>{items.item}</Dropdown.Item>
+            )
+          })}
         </Dropdown.Menu>
         </Dropdown>
           <Navbar.Collapse className="d-lg-block" id="reponsive-navbar-nav">
           <Nav className="d-flex justify-content-between w-100" style={{padding: "0px 15px", margin: "0px 31.2px"}}>
-            <Nav.Link href="#collect" style={{padding: "12px 6px", color: "#ffffff"}}>Collect</Nav.Link>
-            <Nav.Link href="#monitor" style={{padding: "12px 6px", color: "#ffffff"}}>Monitor</Nav.Link>
-            <Nav.Link href='#actions' style={{padding: "12px 6px", color: "#ffffff"}}>Actions</Nav.Link>
-            <Nav.Link href='#colloborate' style={{padding: "12px 6px", color: "#ffffff"}}>Collobrate</Nav.Link>
-            <Nav.Link href="#notifications" style={{padding: "12px 6px", color: "#ffffff"}}>Notifications</Nav.Link>
-            <Nav.Link href="#analytics" style={{padding: "12px 6px", color: "#ffffff"}}>Analytics</Nav.Link>
-            <Nav.Link href='#agency' style={{padding: "12px 6px", color: "#ffffff"}}>Agency</Nav.Link>
-            <Nav.Link href='#' style={{padding: "12px 6px", color: "#ffffff"}}>Beyond</Nav.Link>
+            {data.map(items => {
+              return (
+                <Nav.Link key={items.id} href={items.href} style={{padding: "12px 6px", color: "#ffffff"}}>{items.item}</Nav.Link>
+              )
+            })}
           </Nav>
           </Navbar.Collapse>
       </Container>

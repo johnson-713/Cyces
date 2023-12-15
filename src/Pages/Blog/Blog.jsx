@@ -4,12 +4,26 @@ import Header from "../../Components/Header/Header";
 import "./Blog.css";
 import { useNavigate } from "react-router-dom";
 
+const TruncatedText = ({ text, maxLength }) => {
+  // Check if the text is longer than the specified maxLength
+  if (text.length > maxLength) {
+    // Truncate the text using the slice method
+    const truncatedText = text.slice(0, maxLength) + '...';
+
+    return <span>{truncatedText}</span>;
+  }
+
+  // If the text is shorter than or equal to maxLength, display the original text
+  return <span>{text}</span>;
+};
+
 const Blog = () => {
     const navigate = useNavigate()
 
     const handleBlogPage = () => {
         navigate('/blogpage1')
     }
+
   return (
     <div>
       <Header className="blogHeader" />
@@ -24,9 +38,10 @@ const Blog = () => {
         <Card className="blogCard">
           <Card.Title className="blogCard-title">
             <a href="/blogpage1">
-              <h3>
-                How To Choose The Right Colour For A Call-To-Action Button Hello World Hello hello hello Button Hello World Hello hello hello hello hello hello hello hello
-              </h3>
+              {/* <h3>
+                {truncate("How To Choose The Right Colour For A Call-To-Action Button Hello World Hello hello hello Button Hello World Hello hello hello hello hello hello hello hello")}
+              </h3> */}
+              <TruncatedText text={"How To Choose The Right Colour For A Call-To-Action Button Hello World Hello hello hello Button Hello World Hello hello hello hello hello hello hello hello"} maxLength={30} />
             </a>
           </Card.Title>
           <Card.Text className="blogCard-text">
