@@ -9,7 +9,7 @@
 }
 
 .faqs__rows {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     justify-content: center;
     align-items: flex-start;

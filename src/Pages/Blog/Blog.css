@@ -39,15 +39,16 @@
     margin: 0 !important;
 }
 
-.blogCard-title > a > h3 {
+.blogCard-title > p {
     font-size: 25px;
     color: #2a3848;
     font-weight: 600;
     padding: 0px 25px;
     margin: 25px 0px 16px;
+    cursor: pointer;
 }
 
-.blogCard-title > a:hover {
+.blogCard-title > p:hover {
     text-decoration: none;
     opacity: 0.6;
 }

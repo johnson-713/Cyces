@@ -57,8 +57,8 @@ const FAQs = () => {
       <Container>
           <h2 className="d-flex text-left faqs__heading">Frequently Asked Questions</h2>
       </Container>
-      <Container fluid className="d-flex flex-column align-items-center">
-        <Row className="faqs__rows">
+      <Container className="d-flex flex-column align-items-center">
+        <Row className="faqs__rows" style={{margin: "0px"}}>
           {
             data.map(items => {
               return (

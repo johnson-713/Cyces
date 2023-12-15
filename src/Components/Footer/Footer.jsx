@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import './Footer.css'
 import { useNavigate } from "react-router-dom";
+import colors from "../../Colors/Colors";
 
 
 const Footer = () => {
@@ -70,11 +71,11 @@ const Footer = () => {
         <Row className="d-flex text-left mt-5">
         <span style={{fontSize: "12.8px", padding: "0px 20px"}}>
                           <span style={{color: "#5eb1bf"}}>© </span>
-                          <a href="http://cyces.co" className=" footer__links" target="_blank">Cyces Innovation Labs LLP. </a>
+                          <a href="http://cyces.co" style={{ color: colors.white[100]}} className=" footer__links" target="_blank">Cyces Innovation Labs LLP. </a>
                             <span style={{color: "#5eb1bf"}}>All Rights Reserved.Icons from </span>
-                            <a href="https://flaticons.com" className=" footer__links" target="_blank">Flaticon. </a>
+                            <a href="https://flaticons.com" style={{ color: colors.white[100]}} className=" footer__links" target="_blank">Flaticon. </a>
                             <span style={{color: "#5eb1bf"}}>Illustrations from </span>
-                            <a href="https://undraw.co" className=" footer__links" target="_blank">Undraw</a>
+                            <a href="https://undraw.co" style={{ color: colors.white[100]}} className=" footer__links" target="_blank">Undraw</a>
                     </span>
         </Row>
     </Container>

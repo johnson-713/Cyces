@@ -21,7 +21,7 @@ const Pricing = () => {
       </Container>
       <Container fluid className="card-container">
         <div className="mb-3 mt-3">
-        <Card className="text-center card mr-4">
+        <Card className="text-center card">
           <Card.Header className="card-header">
           <h3>Starter</h3>
           </Card.Header>
@@ -44,7 +44,7 @@ const Pricing = () => {
           <p className="mb-0 text-left">Auto Redirects</p>
           </Card.Text>
         </Card>
-        <Card className="text-center card mr-4">
+        <Card className="text-center card">
           <Card.Header className="card-header2">
           <h3>SMBs & Freelancers</h3>
           </Card.Header>
@@ -105,7 +105,7 @@ const Pricing = () => {
       <Container fluid className="blue__container">
         <Container>
           <Row className="d-flex flex-row justify-content-center align-items-center">
-              <h3 className="containers__header">
+              <h3 className="containers__header text-center">
                 Are you an agency? We have something for you.
               </h3>
                 <Button className="signUpButton">Become a partner</Button>
